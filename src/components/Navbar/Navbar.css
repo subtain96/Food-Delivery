@@ -1,55 +1,136 @@
 .navbar{
-    padding: 20px 0px;
+    padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
+/* Logo */
 .navbar .navbar-logo{
     width: 150px;
-    
 }
+
+/* Menu */
 .navbar-menu{
     display: flex;
     list-style: none;
     color: #49557e;
-    gap: 20px;
+    gap: 30px;
     cursor: pointer;
-
+    font-size: 18px;
 }
 
+/* Right Section */
 .navbar-right{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
+
+/* Button */
 .navbar button{
     background: transparent;
     font-size: 16px;
     color: #49557e;
     border: 1px solid tomato;
-    padding: 10px 30px;
+    padding: 10px 25px;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s;
 }
+
 .navbar button:hover{
     background-color: #fff4f2;
 }
+
+/* Active Menu */
 .navbar .active{
     padding-bottom: 2px;
     border-bottom: 2px solid #49557e;
-
 }
+
+/* Search Icon */
 .navbar-search-icon{
     position: relative;
 }
+
 .navbar-search-icon .dot{
     position: absolute;
     min-width: 10px;
     min-height: 10px;
     background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px ;
+    border-radius: 50%;
+    top: -6px;
+    right: -6px ;
+}
+
+
+/* ========================= */
+/* 🔹 Tablet Responsive */
+/* ========================= */
+
+@media (max-width: 992px){
+    .navbar-menu{
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .navbar-right{
+        gap: 20px;
+    }
+
+    .navbar button{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+
+/* ========================= */
+/* 🔹 Mobile Responsive */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .navbar-menu{
+        display: none;   /* Hide menu on mobile */
+    }
+
+    .navbar .navbar-logo{
+        width: 120px;
+    }
+
+    .navbar-right{
+        gap: 15px;
+    }
+
+    .navbar button{
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+}
+
+
+/* ========================= */
+/* 🔹 Small Mobile */
+/* ========================= */
+
+@media (max-width: 480px){
+
+    .navbar{
+        padding: 12px 4%;
+    }
+
+    .navbar .navbar-logo{
+        width: 100px;
+    }
+
+    .navbar button{
+        padding: 5px 12px;
+        font-size: 12px;
+    }
 }

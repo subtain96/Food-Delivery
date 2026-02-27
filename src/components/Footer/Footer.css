@@ -1,0 +1,154 @@
+.footer {
+    color: #ffffff;
+    background-color: #111;
+    padding: 70px 8vw 30px;
+    margin-top: 80px;
+}
+
+/* GRID LAYOUT */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+/* Logo */
+.footer-logo {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+/* Left Section Text */
+.footer-content-left p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cccccc;
+    max-width: 400px;
+}
+
+/* Social Icons */
+.footer-social-icons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons img {
+    width: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+    transform: translateY(-4px);
+    opacity: 0.8;
+}
+
+/* Headings */
+.footer-content-center h2,
+.footer-content-right h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* List Styling */
+.footer-content-center ul,
+.footer-content-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #cccccc;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover {
+    color: #ff4c24;
+    padding-left: 5px;
+}
+
+/* Divider */
+.footer hr {
+    margin: 50px 0 20px;
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+/* Copyright */
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* ============================= */
+/* 🔹 Large Tablet (992px) */
+/* ============================= */
+
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* ============================= */
+/* 🔹 Tablet (768px) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-content-left p {
+        margin: 0 auto;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* ============================= */
+/* 🔹 Mobile (480px) */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    .footer {
+        padding: 50px 6vw 20px;
+    }
+
+    .footer-logo {
+        width: 130px;
+    }
+
+    .footer-content-center h2,
+    .footer-content-right h2 {
+        font-size: 18px;
+    }
+
+    .footer-content-center li,
+    .footer-content-right li {
+        font-size: 14px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+    }
+}
