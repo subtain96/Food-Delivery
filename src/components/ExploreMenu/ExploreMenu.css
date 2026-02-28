@@ -25,7 +25,7 @@
 .explore-menu-list{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 61px;
     margin: 30px 0;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -57,10 +57,7 @@
     transition: transform 0.3s ease, border 0.3s ease;
 }
 
-/* Hover Effect */
-.explore-menu-list-item img:hover{
-    transform: scale(1.08);
-}
+
 
 /* Text */
 .explore-menu-list-item p{
@@ -91,21 +88,6 @@
 }
 
 
-/* ============================ */
-/* 🔹 Tablet Responsive */
-/* ============================ */
-
-@media (max-width: 992px){
-
-    .explore-menu-list{
-        gap: 20px;
-    }
-
-    .explore-menu-list-item img{
-        width: 85px;
-        height: 85px;
-    }
-}
 
 
 /* ============================ */
