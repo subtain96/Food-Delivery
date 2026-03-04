@@ -11,6 +11,7 @@ node_modules/
 .env.*
 backend/.env
 frontend/.env
+*.local
 
 # ========================
 # Logs
@@ -20,6 +21,8 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # ========================
 # Build Folders
@@ -27,6 +30,8 @@ yarn-error.log*
 frontend/build/
 frontend/dist/
 backend/dist/
+dist
+dist-ssr
 
 # ========================
 # OS Files
@@ -38,7 +43,13 @@ Thumbs.db
 # IDE Files
 # ========================
 .vscode/
+!.vscode/extensions.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # ========================
 # Temporary Files

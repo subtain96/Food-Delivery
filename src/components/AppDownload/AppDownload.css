@@ -1,0 +1,103 @@
+.app-download {
+    margin: 120px auto;
+    padding: 70px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5f2, #ffe9e3);
+    border-radius: 24px;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Title */
+.app-download p {
+    font-size: clamp(22px, 2.5vw, 34px);
+    font-weight: 600;
+    color: #262626;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Platforms Container */
+.app-download-platforms {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;   /* Important for responsiveness */
+}
+
+/* Store Buttons */
+.app-download-platforms img {
+    width: 170px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-download-platforms img:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ============================= */
+/* 🔹 Tablet */
+/* ============================= */
+
+@media (max-width: 992px){
+
+    .app-download {
+        padding: 60px 25px;
+    }
+
+    .app-download-platforms img {
+        width: 150px;
+    }
+}
+
+
+/* ============================= */
+/* 🔹 Mobile */
+/* ============================= */
+
+@media (max-width: 768px){
+
+    .app-download {
+        margin: 80px auto;
+        padding: 50px 20px;
+        border-radius: 18px;
+    }
+
+    .app-download p {
+        font-size: 20px;
+    }
+
+    .app-download-platforms {
+        gap: 15px;
+    }
+
+    .app-download-platforms img {
+        width: 130px;
+    }
+}
+
+
+/* ============================= */
+/* 🔹 Small Mobile */
+/* ============================= */
+
+@media (max-width: 480px){
+
+    .app-download {
+        padding: 40px 15px;
+    }
+
+    .app-download p {
+        font-size: 18px;
+    }
+
+    .app-download-platforms img {
+        width: 120px;
+    }
+}
