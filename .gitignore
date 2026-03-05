@@ -1,5 +1,5 @@
 # ========================
-# Node Modules (Frontend + Backend)
+# Node Modules (Frontend + Backend + Admin)
 # ========================
 node_modules/
 **/node_modules/
@@ -11,6 +11,7 @@ node_modules/
 .env.*
 backend/.env
 frontend/.env
+admin/.env
 *.local
 
 # ========================
@@ -29,6 +30,8 @@ lerna-debug.log*
 # ========================
 frontend/build/
 frontend/dist/
+admin/build/
+admin/dist/
 backend/dist/
 dist
 dist-ssr
