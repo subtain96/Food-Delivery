@@ -1,0 +1,84 @@
+.list{
+    width: 100%;
+    padding: 20px;
+}
+
+.list-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.list-table{
+    width: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Row */
+.list-table-format{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 80px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header Row */
+.list-table-format.title{
+    background: #f9f9f9;
+    font-weight: 600;
+}
+
+/* Food Image */
+.list-table-format img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Delete Button */
+.cursor{
+    cursor: pointer;
+    color: red;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.list-table-format:hover{
+    background: #fafafa;
+}
+
+/* -------- Responsive -------- */
+
+@media (max-width: 900px){
+
+    .list-table-format{
+        grid-template-columns: 60px 1fr 1fr 80px;
+    }
+
+    .list-table-format.title b:nth-child(3),
+    .list-table-format p:nth-child(3){
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .list-table-format{
+        grid-template-columns: 60px 1fr 80px;
+        font-size: 14px;
+    }
+
+    .list-table-format.title b:nth-child(3),
+    .list-table-format.title b:nth-child(4),
+    .list-table-format p:nth-child(3),
+    .list-table-format p:nth-child(4){
+        display: none;
+    }
+
+}
